@@ -1,0 +1,26 @@
+NEW ARTICLE
+
+
+<%= form_for :article, url: articles_path do |form| %>
+  <p>
+    <%= form.label :title %><br>
+    <%= form.text_area :title %>
+  </p>
+
+  <p>
+    <%= form.label :body %><br>
+    <%= form.text_area :body %>
+  </p>
+
+  <p>
+    <%= form.label :color_1 %><br>
+    <%= form.text_field :color_1 %>
+  </p>
+  <p>
+    <%= form.label :color_2 %><br>
+    <%= form.text_field :color_2 %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
