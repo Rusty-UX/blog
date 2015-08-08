@@ -1,0 +1,73 @@
+<style>
+
+  body{
+    color: hsl( {{ page.primary_t_h }}, {{ page.primary_t_s }}%, {{ page.primary_t_l }}%);
+  }
+
+  .cover-container {
+    background: linear-gradient(45deg, hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%) 0%, hsl( {{ page.secondary_h }}, {{ page.secondary_s }}%, {{ page.secondary_l }}%)  100%);
+  }
+
+  .svg-cover-title{
+    fill: hsl( {{ page.secondary_t_h }}, {{ page.secondary_t_s }}%, {{ page.secondary_t_l }}%);
+  }
+
+  .cover-subtitle {
+    color: hsl( {{ page.secondary_t_h }}, {{ page.secondary_t_s }}%, {{ page.secondary_t_l }}%);
+  }
+
+  .button{
+    background: linear-gradient(45deg, hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%) 0%, hsl( {{ page.secondary_h }}, {{ page.secondary_s }}%, {{ page.secondary_l }}%)  100%);
+    box-shadow: inset 0 0 0 4px hsla(0,0%, 0%, 0);
+    transition: all 0.4s;
+  }
+
+  a{
+    background-color: transparent;
+    border-bottom: 1px solid hsla( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%, 0.7);
+  }
+
+  a:hover,
+  a:focus{
+    outline: none;
+    background-color: hsla( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%, 0.3);
+  }
+
+  .input:focus {
+    box-shadow: 0 0 0 2px hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%);
+  }
+
+  .image-cover-link:focus,
+  .cover-link:focus,
+  .button:focus {
+    box-shadow: inset 0 0 0 2px hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%), inset 0 0 0 6px white;
+    outline: 0;
+  }
+
+  .article-header{
+    border-color: hsla( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%, 0.2);
+  }
+
+  .article-container li:before {
+    color: hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%);
+  }
+
+  .main-nav .selected {
+    border-bottom: 1px solid hsl( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%);
+  }
+
+  .full-width-figure .caption-title{
+    border-top: 1px solid hsla( {{ page.primary_h }}, {{ page.primary_s }}%, {{ page.primary_l }}%, 0.5);
+  }
+
+  .article-container p:last-of-type:after {
+    content: '';
+    color: hsl(0, 100%, 50%);
+    background: linear-gradient(45deg, hsl(340, 100%, 51%) 0%, hsl(40, 100%, 60%) 100%);
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    margin-left: 1em;
+  }
+
+</style>
